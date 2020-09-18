@@ -3,7 +3,83 @@
   <head>
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+      #title, #title-info, #img-caption, #second-header {
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  background: midnightblue;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+#title {
+  font-size: 2.5em;
+  margin-bottom: 0;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+}
+#title-info {
+  font-size: 1.3em;
+  font-style: italic;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+#img-div {
+  background: hsl(120, 100%, 87%);
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-color: #C42DD2;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 5px;
+}
+#img-caption {
+  padding-top: 5px;
+  padding-bottom: -4px;
+}
+#tribute-info {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+}
+
+a {
+  font-style: italic;
+}
+@media all and (max-width: 600px) {
+  #img-div {
+    padding: 3px;
+  }
+  #tribute-info{
+    width: 80%;
+  }
+  #title {
+    font-size: 2em;
+  }
+}
+@media all and (max-width: 320px){
+  * {
+    word-spacing: none;
+    letter-spacing: none;
+  }
+  #title {
+    font-size: 1.5em;
+  }
+ 
+}
+    </style>
   </head>
 
   <body>
@@ -14,7 +90,7 @@
         humility, goodness, peace, and tactical skills. 
       </p>
       <div id="img-div">
-        <img id="image" src="https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.centerforworklife.com%2Fleadership-qualities-of-nelson-mandela%2F&psig=AOvVaw16e2lNsghVe2--THy2Orss&ust=1600510254486000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIjP97-78usCFQAAAAAdAAAAABAD" alt="Mandela Picture">
+        <img id="image" src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY2MzU2NjgxMDUwMDM5OTk5/_photo-by-per-anders-petterssongetty-images.jpg" alt="Mandela Picture">
         <figcaption id="img-caption">Nelson Mandela</figcaption>
       </div>
     <div>
@@ -24,7 +100,8 @@
           Rolihlahla Mandela was born into the Madiba clan in the village of Mvezo, 
           in the Eastern Cape, on 18 July 1918. He attended primary school in Qunu where his teacher, Miss Mdingane, gave him the name Nelson, in accordance with the custom of giving all schoolchildren “Christian” names.
         </p>
-        <a id="tribute-link" target="_blank" href = "https://www.nelsonmandela.org/content/page/biography#:~:text=Rolihlahla%20Mandela%20was%20born%20into,Cape%2C%20on%2018%20July%201918.&text=He%20attended%20primary%20school%20in,all%20schoolchildren%20%E2%80%9CChristian%E2%80%9D%20names."></a>
+        <a id="tribute-link" target="_blank" href ="https://www.nelsonmandela.org/content/page/biography#:~:text=Rolihlahla%20Mandela%20was%20born%20into,Cape%2C%20on%2018%20July%201918.&text=He%20attended%20primary%20school%20in,all%20schoolchildren%20%E2%80%9CChristian%E2%80%9D%20names.">
+        READ MORE</a>
       </article> 
     </div>
     </div>
